@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+    </head>
+    <body>
+
+    </body>
+    <script type="text/javascript" src="./class.js"></script>
+    <script type="text/javascript">
+        var b = Class({
+            init: function(data){
+                this.rendera(data);
+            },
+            rendera: function(data){
+                console.log(data)
+            }
+        })
+        var a = Class({
+            inherit: b,
+            init: function(data) {
+                this.render(data);
+            },
+            render: function(data) {
+                this.rendera(data)
+                console.log(data)
+            }
+        })
+
+        var c = new a("aa");
+    </script>
+</html>
