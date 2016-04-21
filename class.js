@@ -35,7 +35,7 @@ var hash = {
 	}
 }
 var Class = function(obj) {
-	if(typeof obj == "object"){
+	if(util.isPlainObject(obj)){
 		var statics = obj.statics,
 			inherit = obj.inherit,
 			init = obj.init;
